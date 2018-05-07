@@ -4,8 +4,13 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
 
-// Define a port to listen for incoming requests
+var app = express();
 var PORT = 8080;
+
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
 
 // Create a generic function to handle requests and responses
 function handleRequest(request, response) {

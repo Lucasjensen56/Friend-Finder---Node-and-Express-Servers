@@ -1,4 +1,4 @@
-# Friend-Finder  Node-and-Express-Servers
+# Friend-Finder-Node-and-Express-Servers
 
 This full-stack site takes in results from user's surveys, then comapares their answer with other user's results. The app then will display the name and picture of the user with the best overall match 
 

@@ -9,14 +9,24 @@
 
     <!--Import materialize.css-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css" />
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script> -->
+
+     <script src="https://code.jquery.com/jquery.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<!--     <script src="https://code.jquery.com/jquery.js"></script>
+ -->
+<!--     <link rel="stylesheet" href="style.css">
+ -->
  
 	<title>Friend Finder Survey</title>
 
@@ -43,7 +53,7 @@
 		<form class="col s12">
 			<div class="row">
 				<div class="input-field col s6">
-					<input placeholder="Placeholder" id="photoLink" type="text" class="validate">
+					<input placeholder="Placeholder" id="photo" type="text" class="validate">
           			<label for="first_name">Link to Photo Image (Required)</label>
 				</div>
 			</div>
@@ -51,6 +61,8 @@
 	</div>
 
 <br>
+
+<div>
 
 	<label>Question 1</label>
 	<h4>Your mind is always buzzing with unexplored ideas and plans.</h4> 
@@ -65,10 +77,9 @@
 	    </select>
 	  </div>
 	<br>
-
+	<label>Question 2</label>
+	<h4>Generally speaking, you rely more on your experience than your imagination.</h4>
 	  <div class="input-field col s12">
-	  	<label>Question 2</label>
-		<h4>Generally speaking, you rely more on your experience than your imagination.</h4>
 	    <select id="question2">
 	      <option value="" disabled selected>Choose your option</option>
 	      <option value="1">1 (Strongly Disagree</option>
@@ -78,10 +89,10 @@
 	      <option value="5">5 (Strongly Agree</option>
 	    </select>
 	  </div>
-
-		<div class="input-field col s12">
-			<label>Question 3</label>
-			<h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+	<br>
+	<label>Question 3</label>
+	<h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+	<div class="input-field col s12">
 	    <select id="question3">
 	      <option value="" disabled selected>Choose your option</option>
 	      <option value="1">1 (Strongly Disagree</option>
@@ -90,11 +101,11 @@
 	      <option value="4">4</option>
 	      <option value="5">5 (Strongly Agree</option>
 	    </select>
-	  </div>
-
+  	</div>
+	<br>
+	<label>Question 4</label>
+	<h4>You rarely do something just out of sheer curiosity.</h4>
 	  <div class="input-field col s12">
-	  		<label>Question 4</label>
-			<h4>You rarely do something just out of sheer curiosity.</h4>
 	    <select id="question4">
 	      <option value="" disabled selected>Choose your option</option>
 	      <option value="1">1 (Strongly Disagree</option>
@@ -104,10 +115,10 @@
 	      <option value="5">5 (Strongly Agree</option>
 	    </select>
 	  </div>
-
+	<br>
+	<label>Question 5</label>
+	<h4>People can rarely upset you.</h4>
 	  <div class="input-field col s12">
-	  		<label>Question 5</label>
-			<h4>People can rarely upset you.</h4>
 	    <select id="question5">
 	      <option value="" disabled selected>Choose your option</option>
 	      <option value="1">1 (Strongly Disagree</option>
@@ -117,10 +128,10 @@
 	      <option value="5">5 (Strongly Agree</option>
 	    </select>
 	  </div>
-
+	<br>
+	<label>Question 6</label>
+	<h4>It is often difficult for you to relate to other people’s feelings.</h4>
 		<div class="input-field col s12">
-			<label>Question 6</label>
-			<h4>It is often difficult for you to relate to other people’s feelings.</h4>
 	    <select id="question6">
 	      <option value="" disabled selected>Choose your option</option>
 	      <option value="1">1 (Strongly Disagree</option>
@@ -130,10 +141,10 @@
 	      <option value="5">5 (Strongly Agree</option>
 	    </select>
 	  </div>
-
+	<br>
+	<label>Question 7</label>
+	<h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
 	  <div class="input-field col s12">
-	  		<label>Question 7</label>
-			<h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
 	    <select id="question7">
 	      <option value="" disabled selected>Choose your option</option>
 	      <option value="1">1 (Strongly Disagree</option>
@@ -143,10 +154,10 @@
 	      <option value="5">5 (Strongly Agree</option>
 	    </select>
 	  </div>
-
+	<br>
+	<label>Question 8</label>
+	<h4>You rarely get carried away by fantasies and ideas.</h4>
 	   <div class="input-field col s12">
-	  		<label>Question 8</label>
-			<h4>You rarely get carried away by fantasies and ideas.</h4>
 	    <select id="question8">
 	      <option value="" disabled selected>Choose your option</option>
 	      <option value="1">1 (Strongly Disagree</option>
@@ -156,10 +167,10 @@
 	      <option value="5">5 (Strongly Agree</option>
 	    </select>
 	  </div>
-
+	<br>
+	<label>Question 9</label>
+	<h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
 	   <div class="input-field col s12">
-	  		<label>Question 9</label>
-			<h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
 	    <select id="question9">
 	      <option value="" disabled selected>Choose your option</option>
 	      <option value="1">1 (Strongly Disagree</option>
@@ -169,10 +180,10 @@
 	      <option value="5">5 (Strongly Agree</option>
 	    </select>
 	  </div>
-
+	<br>
+	<label>Question 10</label>
+	<h4>You feel more energetic after spending time with a group of people.</h4>
 	   <div class="input-field col s12">
-	  		<label>Question 10</label>
-			<h4>You feel more energetic after spending time with a group of people.</h4>
 	    <select id="question10">
 	      <option value="" disabled selected>Choose your option</option>
 	      <option value="1">1 (Strongly Disagree</option>
@@ -182,8 +193,15 @@
 	      <option value="5">5 (Strongly Agree</option>
 	    </select>
 	  </div>
+</div>
+
+<br>
+<br>
 
 	  <button id="submit" class="btn">Submit</button>
+
+	  <button data-target="modal1" class="btn modal-trigger">Modal</button>
+
 
 
 </div>
@@ -193,7 +211,7 @@
 			<h4>Closest Friend Match</h4>
 			<div class="divider"></div>
 			<h5 id="matchName"></h5>
-			<!-- <img id="userMatchImage" class="materialboxed" width="650" src=""> -->
+			<img id="userMatchImage" class="materialboxed" width="650" src="">
 		</div>
 		<div class="modal-footer">
 			<a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
@@ -202,6 +220,18 @@
 
 <script type="text/javascript">
 
+// $(document).ready(function() {
+// 			// $('select').material_select();
+// 			$('#modal1').modal({
+// 				dismissible: false, // Modal can be dismissed by clicking outside of the modal
+// 				opacity: .5, // Opacity of modal background
+// 				inDuration: 300, // Transition in duration
+// 				outDuration: 200, // Transition out duration
+// 				startingTop: '4%', // Starting top style attribute
+// 				endingTop: '10%' // Ending top style attribute
+// 			});
+// 		});
+
 
 
 
@@ -209,6 +239,8 @@
 	var elems = document.querySelectorAll('select');
 	var options = document.querySelectorAll('option');
 	var instances = M.FormSelect.init(elems, options);
+	var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
 	});
 
 
@@ -216,9 +248,10 @@
 
 	$("#submit").on("click", function(event) {
       event.preventDefault();
+      $("#modal1").modal("open")
       var newFriends = {
       	name: $("#userName").val().trim(),
-      	photoLink: $("#photoLink").val().trim(),
+      	photo: $("#photo").val().trim(),
       	scores: [
       	  parseInt($("#question1").val()),
       	  parseInt($("#question2").val()),
@@ -234,36 +267,26 @@
       };
       console.log(newFriends)
 
-      // var newEntry = newFriends.scores;
   
 
       // Question: What does this code do??
-      $.post("/api/friends", newFriends,
-        function(data) {
+      $.post("/api/friends", newFriends)
+        .done(function(data) {
 
+        	console.log('response = ' + JSON.stringify(data));
 
-        	$('#matchName').html(data.matchName);
-		    	$("#userMatchImage").attr("src", data.matchImage);
+        	console.log("this is the data " + data)
+
+        	$('#matchName').html(data);
+        		$("#userMatchImage").attr("src", data.matchImage);
+        		console.log(data.matchImage)
+		    	// $("#userMatchImage").attr("src", data.matchImage);
 		    	// Pop open the modal dialog
-      			$("#modal1").modal("open");
+      			$(".modal").modal("open");
 
 
+       
 
-
-// app.get("/api/friends", function(req, res) {
-//     res.json(friendsData)
-
-//  	friendsData.push(userInput)
-
-//             $("#matchName").html(data.matchName);
-
-//             $("#modal").modal("open");
-
-//             console.log(data.matchName)
-
-//         });
-
-    // console.log(friendsData)
   });
 
 
@@ -273,10 +296,6 @@
 
 
     });
-
-
-	
-  
 
 
 

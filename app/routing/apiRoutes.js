@@ -19,11 +19,12 @@ module.exports = function(app) {
     // req.body hosts is equal to the JSON post sent from the user
     // This works because of our body-parser middleware
 
-    var userInput = req.body;
-    var friendsResponses = userInput.scores;
+    var newFriends = req.body;
+    var friendsResponses = newFriends.scores;
 
 
     var matchName = '';
+    var matchImage = '';
     var totalDifference = 1000;
 
 
@@ -37,53 +38,40 @@ module.exports = function(app) {
 
         for (var j = 0; j < friendsResponses.length; j++) {
           diff += Math.abs(friendsData[i].scores[i] - friendsResponses[j]);
-          console.log("diff " + diff);
+          // console.log("diff " + diff);
         }
-
-      }
 
       if (diff < totalDifference) {
 
-        totalDifference = diff;
-        matchName = friendsData[i].name;
+              console.log('Closest match found = ' + diff);
+              console.log('Friend name = ' + friendsData[i].name);
+              console.log("friend's photo " + friendsData[i].photo)
 
-        console.log(friendsData[i].name)
+
+              totalDifference = diff;
+              matchName = friendsData[i].name;
+              matchImage = friendsData[i].photo;
+
+              console.log(matchName)
+
+              console.log(matchImage)
+
+            }
+
+
 
       }
 
-      friendsData.push(userInput)
-      res.json(matchName)
+      
 
-      // res.json({status: 'OK', matchName: matchName})
+      friendsData.push(newFriends);
 
-
-    // friendsData.push(req.body);
-    // // res.json(true)
-
-    // function totalDifference(newEntry) {
+      res.json(matchName);
+      res.json(matchImage);
 
 
+      // res.json({status: 'OK', matchName: matchName, matchImage: matchImage});
 
-    //   console.log(newEntry)
-
-      // Array.prototype.diff = function(a) {
-      //   return this.filter(function(i) {return a.indexOf(i) < 0;});
-      // };
-
-      // var testEntry = [1,3,4,5,1]
-
-      // for (i = 0; i < friendsData.length; i++) {
-      //   console.log(friendsData[i])
-
-      // }
-
-    
-
-
-    // console.log(dif1); 
-
-
-    // }
 
    
   });

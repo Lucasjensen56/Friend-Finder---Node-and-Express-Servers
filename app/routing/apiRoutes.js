@@ -27,7 +27,7 @@ module.exports = function(app) {
     var matchImage = '';
     var totalDifference = 1000;
 
-
+    var matchArray = [];
 
 
 
@@ -56,18 +56,27 @@ module.exports = function(app) {
 
               console.log(matchImage)
 
+              matchArray.push(matchName);
+              matchArray.push(matchImage);
+
+
             }
 
 
-
       }
+
+
 
       
 
       friendsData.push(newFriends);
 
+      // res.json(matchArray)
+
       res.json(matchName);
       res.json(matchImage);
+
+      // res.jon({matchName: matchName, matchImage: matchImage})
 
 
       // res.json({status: 'OK', matchName: matchName, matchImage: matchImage});

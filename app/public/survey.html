@@ -273,18 +273,21 @@
       $.post("/api/friends", newFriends)
         .done(function(data) {
 
+
+
         	console.log('response = ' + JSON.stringify(data));
 
-        	console.log("this is the data " + data)
+        	console.log("name = " + data)
+
+        	 console.log("photo =  " + data)
+
 
         	$('#matchName').html(data);
-        		$("#userMatchImage").attr("src", data.matchImage);
-        		console.log(data.matchImage)
+        		$("#userMatchImage").attr("src", data);
+        		console.log(data.photo)
 		    	// $("#userMatchImage").attr("src", data.matchImage);
 		    	// Pop open the modal dialog
       			$(".modal").modal("open");
-
-
        
 
   });

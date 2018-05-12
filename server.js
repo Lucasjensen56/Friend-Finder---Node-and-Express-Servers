@@ -11,6 +11,8 @@ var PORT = process.env.PORT || 8080;
 
 app.use('/static', express.static('public'));
 
+app.use(express.static(path.join(__dirname, './app/public')));
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

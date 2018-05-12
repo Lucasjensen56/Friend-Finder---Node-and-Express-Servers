@@ -260,15 +260,17 @@
 
 
 
-        	console.log('response = ' + JSON.stringify(data));
+        	// console.log('response = ' + JSON.stringify(data));
 
-        	console.log("name = " + data)
+        	console.log("match = " + data.name)
+        	console.log("match = " + data.photo)
 
-        	 console.log("photo =  " + data)
+
+        	 // console.log("photo =  " + data)
 
 
-        	$('#matchName').html(data);
-        		$("#userMatchImage").attr("src", data);
+        	$('#matchName').html(data.name);
+        		$("#userMatchImage").attr("src", data.photo);
         		console.log(data.photo)
 		    	// $("#userMatchImage").attr("src", data.matchImage);
 		    	// Pop open the modal dialog

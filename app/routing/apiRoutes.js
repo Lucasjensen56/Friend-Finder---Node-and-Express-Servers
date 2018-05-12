@@ -49,32 +49,28 @@ module.exports = function(app) {
 
 
               totalDifference = diff;
-              matchName = friendsData[i].name;
-              matchImage = friendsData[i].photo;
+              match = friendsData[i];
+              // matchImage = friendsData[i].photo;
 
-              console.log(matchName)
+              // console.log(matchName)
 
-              console.log(matchImage)
+              // console.log(matchImage)
 
-              matchArray.push(matchName);
-              matchArray.push(matchImage);
-
+              // matchArray.push(matchName);
+              // matchArray.push(matchImage);
 
             }
-
 
       }
 
 
 
-      
-
       friendsData.push(newFriends);
 
       // res.json(matchArray)
 
-      res.json(matchName);
-      res.json(matchImage);
+      res.json(match);
+      // res.json(matchImage);
 
       // res.jon({matchName: matchName, matchImage: matchImage})
 

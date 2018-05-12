@@ -7,8 +7,6 @@ This full-stack site takes in results from user's surveys, then comapares their 
 To install the application follow the instructions below:
 
 
-## Running Locally
-
 
 ## Technologies Used
 * JavaScript

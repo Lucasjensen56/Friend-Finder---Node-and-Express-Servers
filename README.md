@@ -24,3 +24,7 @@ To install the application follow the instructions below:
 ## Getting Started
 Clone or fork and run using server.js in the command line.
 Use localhost:8080
+
+or 
+
+visit Heroku deployment page: https://friend-finder-11.herokuapp.com/
